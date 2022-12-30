@@ -1,0 +1,33 @@
+title: "Muntashir's Blog"
+author: "Muntashir Al-Islam"
+description: "The blog of a computer engineer from a third-world country."
+# Social
+email: "muntashirakon@riseup.net"
+twitter_username: "Muntashir"
+github_username: "MuntashirAkon"
+
+#########################################################################################
+######### Nothing below needs to be changed (unless you know what you're doing) #########
+#########################################################################################
+theme: "minima"
+
+rss: rss
+
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+    
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+titles_from_headings:
+  strip_title: true
+  collections: true
+
+defaults:
+  - scope:
+      path: ""
+      type: post
+    values:
+      tags: Other
