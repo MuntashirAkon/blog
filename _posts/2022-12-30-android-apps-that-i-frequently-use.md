@@ -1,4 +1,11 @@
-## Android Apps that I Frequently Use
+---
+layout: post
+title: "Android Apps that I Frequently Use"
+description: "Many of you often wonder what applications I use in a daily basis. As you might expect, I mostly use free and open source software (FOSS). While this is a highly opinionated topic, especially, to those who already use FOSS applications, here goes the list of applications that I frequently use."
+date: 2022-12-30T12:22:00+06:00
+tags: Android
+comment_id: 1
+---
 
 Many of you often wonder what applications I use in a daily basis. As you might expect, I mostly use free and open source software (FOSS). While this is a highly opinionated topic, especially, to those who already use FOSS applications, here is the list of applications that I frequently use in alphabetical order:
 
@@ -17,6 +24,7 @@ Many of you often wonder what applications I use in a daily basis. As you might 
 - Droid-ify ([GitHub](https://github.com/Iamlooker/Droid-ify) \| [F-Droid](https://f-droid.org/en/packages/com.looker.droidify/)) - _A quick material F-Droid client (has similar drawbacks like the rest of the clients, but at least, it supports setting App Manager as the installer unlike, say, [NeoStore](https://f-droid.org/en/packages/com.machiav3lli.fdroid/))_
 - F-Droid Build Status ([Codeberg](https://codeberg.org/pstorch/F-Droid_Build_Status) \| [F-Droid](https://f-droid.org/en/packages/de.storchp.fdroidbuildstatus/)) - _Displays and monitors build status from F-Droid_
 - Forkgram ([GitHub](https://github.com/Forkgram/TelegramAndroid) \| [F-Droid](https://f-droid.org/en/packages/org.forkgram.messenger/)) - _A fork of the official Telegram for Android application with extended features_
+- Geometric Weather ([GitHub](https://github.com/WangDaYeeeeee/GeometricWeather) \| [F-Droid](https://f-droid.org/en/packages/wangdaye.com.geometricweather/)) - _A lightweight, powerful, open-source Material Design weather app_
 - Insular ([GitLab](https://gitlab.com/secure-system/Insular) \| [F-Droid](https://f-droid.org/en/packages/com.oasisfeng.island.fdroid/)) - _Isolate your Big Brother apps in a separate work profile, fork of [Island](https://github.com/oasisfeng/island)_
 - K-9 Mail ([GitHub](https://github.com/thundernest/k-9) \| [F-Droid](https://f-droid.org/en/packages/com.fsck.k9/)) - _An open source email client that works with basically every email provider (many people prefer [FairEmail](https://f-droid.org/en/packages/eu.faircode.email))_
 - MiXplorer (Closed source) - _The most complete file manager on Android (not necessarily the most neat though) (simple FOSS alternative is [Material Files](https://f-droid.org/en/packages/me.zhanghai.android.files))_
@@ -35,6 +43,3 @@ Many of you often wonder what applications I use in a daily basis. As you might 
 - Termux ([GitHub](https://github.com/termux/termux-app) \| [F-Droid](https://f-droid.org/en/packages/com.termux/)) - _Terminal emulator with packages_
 - Trail Sense ([GitHub](https://github.com/kylecorry31/Trail-Sense) \| [F-Droid](https://f-droid.org/en/packages/com.kylecorry.trail_sense/)) - _Use your phone's sensors to assist with (not just) wilderness treks (like App Manager, this will help you get rid of a lot of apps)_
 - URLCheck ([GitHub](https://github.com/TrianguloY/UrlChecker) \| [F-droid](https://f-droid.org/en/packages/com.trianguloy.urlchecker/)) - _Allows you to analyze (or share) urls before opening them (a very good app if I say so)_
-- Geometric Weather ([GitHub](https://github.com/WangDaYeeeeee/GeometricWeatherhttps://github.com/WangDaYeeeeee/GeometricWeather) \| [F-Droid](https://f-droid.org/en/packages/wangdaye.com.geometricweather/)) - _A lightweight, powerful, open-source Material Design weather app_
-
-You can leave a comment [here](https://github.com/MuntashirAkon/blog/issues/1) if you think I’ve accidentally left out some apps or you have a better suggestion.
