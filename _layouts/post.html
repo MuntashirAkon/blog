@@ -1,9 +1,14 @@
 ---
-layout: default
+layout: compress
 ---
+{% include head.html %}
+
+  <main>
+
+    {% include header.html %}
+
 <link href="{{ "/css/override.css" | relative_url }}" rel="stylesheet" type="text/css">
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
@@ -13,18 +18,27 @@ layout: default
       </time>
       {% assign author = page.author | default: site.author %}
       {%- if author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- endif -%}</p>
-  </header>
+      &nbsp;•&nbsp;<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+      {%- endif -%}
+      &nbsp;• {% include sharelinks.html %}
+    </p>
 
-  <div class="share-links">
-    {% include sharelinks.html %}
-  </div>
+  </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+    {%- if page.comment_id -%}
+    <a class="comment-button" href="https://github.com/MuntashirAkon/blog/issues/{{ page.comment_id }}" target="_blank" rel="noreferrer">Comment on GitHub <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+    {%- endif -%}
     {% include navlinks.html %}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+  </main>
+
+  {% include footer-post.html %}
+
+</body>
+</html>

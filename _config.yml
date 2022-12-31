@@ -1,25 +1,40 @@
 title: "Muntashir's Blog"
 author: "Muntashir Al-Islam"
-description: "The blog of a computer engineer from a third-world country."
+description: "The blog of a computer engineer from a third-world country"
 # Social
 email: "muntashirakon@riseup.net"
-twitter_username: "Muntashir"
 github_username: "MuntashirAkon"
+twitter_username: "Muntashir"
 
-#########################################################################################
-######### Nothing below needs to be changed (unless you know what you're doing) #########
-#########################################################################################
 theme: "minima"
 
 rss: rss
 
+markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
     disable: true
+
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+    
+sass:
+  sass_dir: css
+  style:    compressed
     
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  
+permalink: pretty
+timezone: UTC
+future: false
 
 titles_from_headings:
   strip_title: true
@@ -28,6 +43,6 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       tags: Other
