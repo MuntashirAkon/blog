@@ -354,6 +354,19 @@ nav {
 
 }
 
+/**************************************
+    $MEDIA QUERIES - PRINT
+/**************************************/
+@media print {
+  .menu-icon, nav {
+    display: none;
+  }
+  
+  .bottom-footer {
+    text-align: center;
+  }
+}
+
 /* Dark Mode */
 //@media (prefers-color-scheme: dark) {
 //    body{background:#191919;filter:invert(1);}

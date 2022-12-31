@@ -18,9 +18,9 @@ layout: compress
       </time>
       {% assign author = page.author | default: site.author %}
       {%- if author -%}
-      &nbsp;•&nbsp;<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
       {%- endif -%}
-      &nbsp;• {% include sharelinks.html %}
+      <span class="social-sharing">{% include sharelinks.html %}</span>
     </p>
 
   </header>
@@ -28,7 +28,7 @@ layout: compress
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
     {%- if page.comment_id -%}
-    <a class="button" href="https://github.com/MuntashirAkon/blog/issues/{{ page.comment_id }}" target="_blank" rel="noreferrer">Comment on GitHub <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+    <a class="button" href="https://github.com/MuntashirAkon/blog/issues/{{ page.comment_id }}" target="_blank" rel="noreferrer">Comment on GitHub {% include icons/open_in_new.svg %}</a>
     {%- endif -%}
     {% include navlinks.html %}
   </div>
