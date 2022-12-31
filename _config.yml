@@ -6,8 +6,6 @@ email: "muntashirakon@riseup.net"
 github_username: "MuntashirAkon"
 twitter_username: "Muntashir"
 
-theme: "minima"
-
 rss: rss
 
 markdown: kramdown
@@ -30,6 +28,7 @@ sass:
     
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
   
 permalink: pretty

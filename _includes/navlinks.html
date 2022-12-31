@@ -1,7 +1,7 @@
 <hr class="bottom-rule">
 <div class="post-nav">
   {%- if page.previous.url -%}
-  <a class="previous" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
+  <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">
     <span class="sans">◀︎ Previous Post</span>
     {{ page.previous.title }}
   </a>
@@ -12,7 +12,7 @@
   </a>
   {%- endif -%}
   {%- if page.next.url -%}
-  <a class="next" href="{{ page.next.url }}" title="{{ page.next.title }}">
+  <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">
     <span class="sans">Next Post ▶︎</span>
     {{ page.next.title }}
   </a>
