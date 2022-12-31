@@ -220,6 +220,21 @@ figure {
     }
 }
 
+.button {
+  background-color: #efefe8;
+  padding: 0.5em 1em;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: #fffff8!important;
+  background-color: #333338;
+  text-decoration: none;
+}
+
 /**************************************
     $CONTAINERS
 /**************************************/
@@ -230,23 +245,31 @@ figure {
 /**************************************
     $NAVIGATION
 /**************************************/
+.menu-icon {
+    cursor: pointer;
+    display: none;
+    text-decoration: underline;
+    padding: 0.5rem;
+    float: right;
+    position: relative;
+    top: -2rem;
+}
+
+.menu-icon svg {
+  fill: #111;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-btn:checked ~ .site-nav {
+    display: block;
+}
+
 nav {
     margin-bottom: 6rem;
     margin-top: 1rem;
-
-    .menu-icon {
-        cursor: pointer;
-        display: none;
-        text-decoration: underline;
-    }
-
-    .menu-btn {
-        display: none;
-    }
-
-    .menu-btn:checked ~ .site-nav {
-        display: block;
-    }
 
     ul.site-nav {
         list-style: none;
@@ -273,6 +296,13 @@ nav {
         padding: 10px;
         width: calc(100% - 20px);
     }
+    
+    #heading {
+      text-align: center;
+    }
+    #subheading {
+      display: none;
+    }
 
     h2.title { margin-top: 2rem; }
 
@@ -284,11 +314,12 @@ nav {
         max-width: 100% !important;
     }
 
-    nav {
 
-        .menu-icon {
-            display: inline-block;
-        }
+    .menu-icon {
+        display: inline-block;
+    }
+
+    nav {
 
         ul.site-nav {
             display: none;

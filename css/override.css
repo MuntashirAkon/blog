@@ -1,7 +1,3 @@
-.post-header, .post-content {
-  margin-bottom: 0;
-}
-
 .post-meta {
   display: inline-flex;
   align-items: center;
@@ -52,19 +48,4 @@
 
 .post-nav .next {
   text-align: right;
-}
-
-.comment-button {
-  background-color: #efefe8;
-  padding: 0.5em 1em;
-  border-radius: 0.5rem;
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.comment-button:hover {
-  color: #fffff8!important;
-  background-color: #333338;
-  text-decoration: none;
 }
