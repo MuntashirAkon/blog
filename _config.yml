@@ -9,9 +9,7 @@ twitter_username: "Muntashir"
 rss: rss
 
 markdown: kramdown
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
+highlighter: rouge
 
 compress_html:
   clippings: all
