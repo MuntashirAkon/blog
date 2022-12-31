@@ -44,9 +44,7 @@ p,table,blockquote,pre,img,hr,.mini-note,ul li,ol li {
     box-sizing: border-box;
     max-width: 55%;
 }
-.MathJax_SVG_Display {
-    max-width: 55% !important;
-}
+
 li ul li, li ol li {
     max-width: 100%;
 }
@@ -288,6 +286,13 @@ nav {
 }
 
 /**************************************
+    $MATH - KATEX
+/**************************************/
+.katex-display {
+  width: 55%;
+}
+
+/**************************************
     $MEDIA QUERIES - TABLET
 /**************************************/
 @media(max-width: 850px) {
@@ -310,10 +315,9 @@ nav {
         max-width: 100%;
     }
 
-    .MathJax_SVG_Display {
-        max-width: 100% !important;
+    .katex-display {
+        max-width: 100%;
     }
-
 
     .menu-icon {
         display: inline-block;
