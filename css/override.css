@@ -1,8 +1,6 @@
 /* Post metadata */
 
 .post-meta {
-  display: inline-flex;
-  align-items: center;
 }
 
 .post-meta .dt-published, .post-meta .author, .post-meta .social-sharing {

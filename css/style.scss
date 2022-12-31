@@ -19,7 +19,7 @@ body {
     -webkit-font-smoothing: antialiased;
     background: #fffff8;
     color: #111;
-    counter-reset: sidenote-counter sidenote-number-counter;
+    counter-reset: sidenote-counter sidenote-number-counter katexEqnNo mmlEqnNo !important;
     font: 1.4rem/2rem "et-book", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     height: 100%;
     margin: 0 auto;
@@ -197,6 +197,12 @@ figure {
         left: auto;
         position: relative;
     }
+}
+
+/*span*/.note {
+    display: block;
+    font-size: 80%;
+    font-style: italic;
 }
 
 /*span*/.mini-note {
