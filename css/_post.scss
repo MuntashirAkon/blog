@@ -13,6 +13,15 @@
   
   .post-tags {
     color: red;
+    
+    a {
+      color: red;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -37,6 +46,9 @@
   hr {
     display: block;
     margin: 0;
+    padding: 0.1rem 0;
+    width: 2.5rem;
+    background-color: #3f3f38;
   }
   
   svg {

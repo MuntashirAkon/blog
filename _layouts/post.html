@@ -3,16 +3,14 @@ layout: compress
 ---
 {% include head.html %}
 
-  <main>
-
-    {% include header.html %}
+{% include header.html %}
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <div class="post-issue">
       <span class="post-tags">
         {% for tag in page.tags %}
-        #{{ tag }}
+        #<a href="{{ "tags/" | relative_url }}{{ tag | downcase }}">{{ tag }}</a>
         {% endfor %}
       </span>
       &mdash;
@@ -37,8 +35,11 @@ layout: compress
     {% include icons/divider_flourish_line_swirl.svg %}
   </div>
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <section class="post-content e-content" itemprop="articleBody">
     {{ content }}
+  </div>
+  
+  <div class="post-footer">
     {%- if page.comment_id -%}
     <div class="post-comment">
       <a class="button" href="https://github.com/MuntashirAkon/blog/issues/{{ page.comment_id }}" target="_blank" rel="noreferrer">Comment on GitHub {% include icons/open_in_new.svg %}</a>
@@ -50,9 +51,7 @@ layout: compress
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
-  </main>
-
-  {% include footer-post.html %}
+{% include footer.html %}
 
 </body>
 </html>

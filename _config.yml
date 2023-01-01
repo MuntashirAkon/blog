@@ -36,6 +36,11 @@ future: false
 titles_from_headings:
   strip_title: true
   collections: true
+  
+collections:
+  tag_list:
+    output: true
+    permalink: /tags/:slug/
 
 defaults:
   - scope:
@@ -43,3 +48,8 @@ defaults:
       type: posts
     values:
       tags: Other
+  - scope:
+      path: ""
+      type: tag_list
+    values:
+      layout: posts-by-tag
