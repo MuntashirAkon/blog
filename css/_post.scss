@@ -1,0 +1,125 @@
+/**************************************
+    $POST
+/**************************************/
+.post-issue {
+  margin-top: 2.6rem;  
+  
+  .post-tags, .dt-published {
+    text-transform: uppercase;
+    font-size: smaller;
+    font-family: monospace;
+    display: inline-block;
+  }
+  
+  .post-tags {
+    color: red;
+  }
+}
+
+.post-title {
+  margin-top: 0;
+}
+
+.post-subtitle {
+  font-style: italic;
+}
+
+.post-meta .author, .post-meta .social-sharing {
+  display: inline-block;
+}
+
+.post-divider {
+  display: block;
+  align-items: center;
+  vertical-align: top;
+  justify-content: center;
+  
+  hr {
+    display: block;
+    margin: 0;
+  }
+  
+  svg {
+    display: none;
+    height: 0.5rem;
+    width: 8rem;
+  }
+}
+
+/**************************************
+    $NAVIGATION - POST
+/**************************************/
+.bottom-rule {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.post-nav {
+  display: flex;
+  font-style: italic;
+  max-width: 55%;
+  
+  span {
+    display: block;
+    font-size: 0.6em;
+    color: #6f6f68;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  
+  a {
+    padding: 0.5em;
+    width: 50%;
+    position: relative;
+    color: inherit !important;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: #efefe8;
+    text-decoration: none;
+  }
+  
+  .previous {
+    text-align: left;
+  }
+  
+  .next {
+    text-align: right;
+  }
+}
+
+
+/**************************************
+    $MEDIA QUERIES - TABLET
+/**************************************/
+@media(max-width: 850px) {
+  .post-issue, .post-title, .post-subtitle, .post-meta, .post-comment {
+    text-align: center;
+  }
+  
+  .post-divider {
+    display: flex;
+    
+    hr {
+      display: none;
+    }
+    
+    svg {
+      display: block;
+    }
+  }
+
+  .post-nav {
+    max-width: 100%;
+  }
+}
+
+/**************************************
+    $MEDIA QUERIES - PRINT
+/**************************************/
+@media print {
+  .bottom-rule, .post-nav, .social-sharing, .post-comment {
+    display: none !important;
+  }
+}

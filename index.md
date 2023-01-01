@@ -1,8 +1,13 @@
-Welcome to my blog!
+---
+layout: page
+permalink: index.html
+---
+
+# Hi, there!
 
 This is my personal blog site. Therefore, anything I say here are my own.
 
-### Posts
+## Posts
 
 {% for post in site.posts %}
   <article>

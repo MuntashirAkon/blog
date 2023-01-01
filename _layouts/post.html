@@ -7,28 +7,42 @@ layout: compress
 
     {% include header.html %}
 
-<link href="{{ "/css/override.css" | relative_url }}" rel="stylesheet" type="text/css">
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
+    <div class="post-issue">
+      <span class="post-tags">
+        {% for tag in page.tags %}
+        #{{ tag }}
+        {% endfor %}
+      </span>
+      &mdash;
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
+    </div>
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-subtitle">{{ page.description | escape }}</p>
+    <p class="post-meta">
       {% assign author = page.author | default: site.author %}
       {%- if author -%}
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">By <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
       {%- endif -%}
-      <span class="social-sharing">{% include sharelinks.html %}</span>
+      <span class="social-sharing">{% include social-sharing.html %}</span>
     </p>
-
   </header>
+  
+  <div class="post-divider">
+    <hr />
+    {% include icons/divider_flourish_line_swirl.svg %}
+  </div>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
     {%- if page.comment_id -%}
-    <a class="button" href="https://github.com/MuntashirAkon/blog/issues/{{ page.comment_id }}" target="_blank" rel="noreferrer">Comment on GitHub {% include icons/open_in_new.svg %}</a>
+    <div class="post-comment">
+      <a class="button" href="https://github.com/MuntashirAkon/blog/issues/{{ page.comment_id }}" target="_blank" rel="noreferrer">Comment on GitHub {% include icons/open_in_new.svg %}</a>
+    </div>
     {%- endif -%}
     {% include navlinks.html %}
   </div>

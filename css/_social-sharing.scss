@@ -1,0 +1,52 @@
+.share-icon {
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0.5rem;
+    
+  & svg {
+    height: 1.5rem;
+    color: #111;
+  }
+}
+
+.share-button {
+  display: none;
+}
+
+.share-button:checked ~ #share-buttons {
+  display: flex;
+}
+
+#share-buttons {
+  align-items: center;
+  display: none;
+  position: absolute;
+  padding: 0.3rem;
+  background-color: #efefe8;
+  border: 0.1rem solid #afafa8;
+  border-radius: 0.3rem;
+  z-index: 2;
+  
+  & > span {
+    padding: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: flex;
+    align-items: center;
+    
+    & > svg {
+      height: 1rem;
+      fill: #3f3f38;
+    }
+  }
+  
+  & > span:hover {
+    cursor: pointer;
+  }
+  
+  & > span.facebook:hover > svg {fill: #3B5998;}
+  & > span.twitter:hover > svg {fill: #55ACEE;}
+  & > span.linkedin:hover > svg {fill: #0077b5;}
+  & > span.mail:hover > svg {fill: #7D7D7D;}
+  & > span.instagram:hover > svg {fill: #C73B92;}
+}

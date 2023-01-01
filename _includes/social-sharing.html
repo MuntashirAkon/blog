@@ -2,6 +2,8 @@
 {% assign safetitle = page.title | url_encode %}
 {% assign safetitlepre = "[Blog] " | append: page.author | append: " - " | url_encode %}
 
+<label class="share-icon" for="share-button">{% include icons/share.svg %}</label>
+<input class="share-button" type="checkbox" id="share-button" />
 <span id="share-buttons">
   <span class="facebook" title="Share this on Facebook"    onclick="window.open('https://www.facebook.com/share.php?u={{ safeurl }}','popup','width=600,height=600'); return false;">
     {% include icons/facebook.svg %}
@@ -16,16 +18,3 @@
     {% include icons/mail.svg %}
   </span>
 </span>
-
-<style>
-  #share-buttons {display: inline-flex; align-items: center;}
-  #share-buttons:after {content: ""; display: block; clear: both;}
-  #share-buttons > span {position: relative; text-align: left; height: 14px; width: 24px; float: left; text-align: center;}
-  #share-buttons > span > svg {height: 14px; fill: #bfbfb8;}
-  #share-buttons > span:hover {cursor: pointer;}
-  #share-buttons > span.facebook:hover > svg {fill: #3B5998;}
-  #share-buttons > span.twitter:hover > svg {fill: #55ACEE;}
-  #share-buttons > span.linkedin:hover > svg {fill: #0077b5;}
-  #share-buttons > span.mail:hover > svg {fill: #7D7D7D;}
-  #share-buttons > span.instagram:hover > svg {fill: #C73B92;}
-</style>
