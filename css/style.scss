@@ -5,10 +5,10 @@
 /**************************************
     $IMPORT OTHERS
 /**************************************/
-@use 'header';
-@use 'post';
-@use 'social-sharing';
-@use 'code-theme-bw';
+@import 'header';
+@import 'post';
+@import 'social-sharing';
+@import 'code-theme-bw';
 
 /**************************************
     $CRITICAL CSS
