@@ -7,15 +7,15 @@
   .post-tags, .dt-published {
     text-transform: uppercase;
     font-size: smaller;
-    font-family: monospace;
+    font-family: Courier, monospace;
     display: inline-block;
   }
   
   .post-tags {
-    color: red;
+    color: rgb(220, 40, 40);
     
     a {
-      color: red;
+      color: rgb(220, 40, 40);
       text-decoration: none;
     }
     
@@ -133,5 +133,24 @@
 @media print {
   .bottom-rule, .post-nav, .social-sharing, .post-comment {
     display: none !important;
+  }  
+}
+
+/**************************************
+    $MEDIA QUERIES - DARK
+/**************************************/
+@media (prefers-color-scheme: dark) {
+  .post-issue .post-tags {
+    filter: invert(1);
+    
+    a:focus, a:hover {
+      filter: invert(0);
+    }
+  }
+  
+  .post-nav {
+    a:hover {
+      background-color: #e6e6e9;
+    }
   }
 }

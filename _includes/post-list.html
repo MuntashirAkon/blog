@@ -1,0 +1,18 @@
+{% for post in posts %}
+  {% assign currentdate = post.date | date: "%Y/%m" %}
+  {% if currentdate != date %}
+    {% unless forloop.first %}
+        </ul>
+    {% endunless %}
+    <h3>{{ post.date | date: "%B %Y" }}</h3>
+    <ul class="post-list">
+    {% assign date = currentdate %}
+  {% endif %}
+  <li>
+    <span>{{ post.date | date: "%-d %b" }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+  </li>
+  {% if forloop.last %}
+    </ul>
+  {% endif %}
+{% endfor %}

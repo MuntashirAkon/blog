@@ -1,0 +1,24 @@
+/**************************************
+    $POST LIST
+/**************************************/
+ul.post-list {
+  list-style: none;
+  padding-left: 3.5rem;
+
+  li {
+    position: relative;
+    
+    span {
+      display: inline-block;
+      width: 3.5rem;
+      font-size: 80%;
+      font-style: italic;
+      position: absolute;
+      left: -3.5rem;
+    }
+    
+    a {
+      display: inline;
+    }
+  }
+}

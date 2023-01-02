@@ -11,24 +11,8 @@ Posts tagged with <span class="monospace">#{{ page.slug | upcase }}</span>
 </div>
 
 {% if site.tags[page.slug] %}
-  {% for post in site.tags[page.slug] %}
-    {% assign currentdate = post.date | date: "%Y/%m" %}
-    {% if currentdate != date %}
-      {% unless forloop.first %}
-        </ul>
-      {% endunless %}
-      <h3>{{ post.date | date: "%B %Y" }}</h3>
-      <ul class="post-list">
-      {% assign date = currentdate %}
-    {% endif %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      <span class="note">{{ post.date | date: "%b %-d, %Y" }}</span>
-    </li>
-    {% if forloop.last %}
-      </ul>
-    {% endif %}
-  {% endfor %}
+  {% assign posts=site.tags[page.slug] %}
+  {% include post-list.html posts=posts %}
 {% else %}
    <p>There are no posts in this tag.</p>
 {% endif %}

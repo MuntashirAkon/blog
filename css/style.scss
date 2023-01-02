@@ -7,6 +7,7 @@
 /**************************************/
 @import 'header';
 @import 'post';
+@import 'post-list';
 @import 'social-sharing';
 @import 'code-theme-bw';
 
@@ -152,7 +153,7 @@ table {
 }
 
 /*p*/.monospace {
-  font-family: monospace;
+  font-family: Courier, monospace;
 }
 
 /*span*/.caps {
@@ -247,12 +248,12 @@ figure {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-}
-
-/*a*/.button:hover {
-  color: #fffff8!important;
-  background-color: #333338;
-  text-decoration: none;
+  
+  &:hover {
+    color: #fffff8!important;
+    background-color: #33332c;
+    text-decoration: none;
+  }
 }
 
 /**************************************
@@ -340,11 +341,31 @@ figure {
   .bottom-footer {
     text-align: center;
   }
+  
+  a {
+    text-decoration-thickness: 1px;
+  }
 }
 
-/* Dark Mode */
-//@media (prefers-color-scheme: dark) {
-//    body{background:#191919;filter:invert(1);}
-//    .highlight{border-color: grey !important;}
-//    img,iframe,.highlight,a:hover,a:focus{filter:invert(1);}
-//}
+/**************************************
+    $MEDIA QUERIES - DARK
+/**************************************/
+@media (prefers-color-scheme: dark) {
+    body{
+      background: #090906;
+      filter: invert(1);
+    }
+    
+    .button {
+      background-color: #e6e6e9;
+      
+      &:hover {
+        background-color: #333330;
+        filter: invert(0);
+      }
+    }
+    
+    img,iframe,a:hover,a:focus{
+      filter: invert(1);
+    }
+}
