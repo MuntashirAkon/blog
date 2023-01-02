@@ -1,36 +1,47 @@
 /**************************************
     $NAVIGATION
 /**************************************/
-.menu-icon {
-  cursor: pointer;
-  display: none;
-  width: 1.5rem;
-  height: 1.5rem;
-  padding: 0.35rem;
-  float: right;
+nav {
   position: relative;
-  top: -2.3rem;
+  
+  .menu-icon {
+    cursor: pointer;
+    display: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.35rem;
+    border: $dimen-border solid $color-popup-light-border;
+    border-radius: $dimen-border-radius-small;
+    background-color: $color-background-light;
+    position: absolute;
+    top: -0.1rem;
+    right: 0;
     
-  svg {
-    fill: #111;
+    svg {
+      fill: $color-icon-light;
+    }
+  
+    &:hover {
+      background-color: $color-button-light-background;
+      
+      svg {
+        fill: $color-icon-light-hover;
+      }
+    }
   }
-}
 
-.menu-btn {
-  display: none;
-}
+  .menu-btn {
+    display: none;
+  }
 
-.menu-btn:checked ~ .site-nav {
-  display: inline-block;
-}
+  .menu-btn:checked ~ .site-nav {
+    display: inline-block;
+  }
 
-nav.site-nav {
-  margin-bottom: 6rem;
-  margin-top: 1rem;
-
-  ul {
+  ul.site-nav {
     list-style: none;
-    margin: 0;
+    margin-bottom: 6rem;
+    margin-top: 1rem;
     padding: 0;
 
     li {
@@ -41,40 +52,40 @@ nav.site-nav {
     a,a:visited {
       text-decoration: none;
     }
-  }
+  }  
 }
 
 /**************************************
     $MEDIA QUERIES - TABLET
 /**************************************/
 @media(max-width: 850px) {
-  #heading {
-    text-align: center;
-  }
+  nav {
+    #heading {
+      text-align: center;
+    }
   
-  #subheading {
-    display: none;
-  }
+    #subheading {
+      display: none;
+    }
 
-  h2.title { margin-top: 2rem; }
+    h2.title { margin-top: 2rem; }
 
-  .menu-icon {
-    display: inline-block;
-  }
+    .menu-icon {
+      display: inline-block;
+    }
 
-  nav.site-nav {
-    display: none;
-    float: right;
-    position: absolute;
-    right: 0.5rem;
-    z-index: 3;
-    background-color: #fff;
-    border: 0.1rem solid #afafa8;
-    border-radius: 0.3rem;
-    margin: 0;
-    padding: 0.3rem 0;
+    ul.site-nav {
+      display: none;
+      float: right;
+      position: absolute;
+      right: 0;
+      z-index: 3;
+      background-color: $color-popup-light-background;
+      border: 0.1rem solid $color-popup-light-border;
+      border-radius: $dimen-border-radius-small;
+      margin: 0;
+      padding: 0.3rem 0;
 
-    ul {
       li {
         display: block;
         margin: 0;
@@ -84,7 +95,7 @@ nav.site-nav {
           padding: 0 1rem;
         }
       }
-    }
+    }    
   }
 }
 
@@ -92,7 +103,26 @@ nav.site-nav {
     $MEDIA QUERIES - PRINT
 /**************************************/
 @media print {
-  .menu-icon, nav {
-    display: none !important;
+  nav {  
+    .menu-icon, .site-nav {
+      display: none !important;
+    }    
+  }
+}
+
+/**************************************
+    $MEDIA QUERIES - DARK
+/**************************************/
+@media (prefers-color-scheme: dark) {
+  nav {
+    .menu-icon {
+      background-color: $color-background-dark-alt;
+      filter: invert(0);
+      
+      &:hover {
+        background-color: $color-button-dark-background;
+        filter: invert(0);
+      }
+    }
   }
 }

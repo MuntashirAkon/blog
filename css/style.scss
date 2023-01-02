@@ -5,11 +5,13 @@
 /**************************************
     $IMPORT OTHERS
 /**************************************/
+@import 'vars';
 @import 'header';
 @import 'post';
 @import 'post-list';
 @import 'social-sharing';
 @import 'code-theme-bw';
+
 
 /**************************************
     $CRITICAL CSS
@@ -20,16 +22,16 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: $font-sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
     -webkit-font-smoothing: antialiased;
-    background: #fffff8;
-    color: #111;
+    background: $color-background-light;
+    color: $color-text-light;
     counter-reset: sidenote-counter sidenote-number-counter katexEqnNo mmlEqnNo !important;
-    font: 1.4rem/2rem "et-book", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font: 1.4rem/2rem $font-sans;
     height: 100%;
     margin: 0 auto;
     max-width: 1440px;
@@ -51,11 +53,13 @@ h3 { font-size: 1.7rem; margin-top: 2.6rem; }
 
 p,table,blockquote,pre,img,hr,.mini-note,ul li,ol li {
     box-sizing: border-box;
-    max-width: 55%;
+    max-width: $dimen-max-width;
 }
 
-li ul li, li ol li {
+li {
+  ul li, ol li {
     max-width: 100%;
+  }
 }
 
 p {
@@ -63,10 +67,10 @@ p {
 }
 
 a,a:visited {
-    color: #111;
+    color: $color-anchor-light;
 
     &:hover {
-        color: rgb(220, 40, 40);
+        color: $color-anchor-light-hover;
     }
 }
 
@@ -91,7 +95,7 @@ figure {
 }
 
 hr {
-    background-color: #111;
+    background-color: $color-text-light;
     border: 0;
     height: 0.1rem;
     margin: 4rem 0;
@@ -135,7 +139,7 @@ table {
     }
 
     thead th {
-        border-bottom: 1px solid #111;
+        border-bottom: 1px solid $color-text-light;
     }
 }
 
@@ -148,12 +152,12 @@ table {
 }
 
 /*p*/.sans {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-family: $font-sans-serif;
     letter-spacing: .03em;
 }
 
 /*p*/.monospace {
-  font-family: Courier, monospace;
+  font-family: $font-monospace;
 }
 
 /*span*/.caps {
@@ -182,7 +186,6 @@ figcaption {
     
     &:before {
         content: counter(sidenote-counter) " ";
-        font-family: et-book-roman-old-style;
         position: relative;
         top: -0.5rem;
         vertical-align: baseline;
@@ -194,7 +197,6 @@ figcaption {
 
     &:after {
         content: counter(sidenote-number-counter);
-        font-family: et-book-roman-old-style;
         font-size: 80%;
         left: 0.1rem;
         position: relative;
@@ -212,12 +214,7 @@ figure {
     }
 }
 
-/*span*/.note {
-    display: block;
-    font-size: 80%;
-    font-style: italic;
-}
-
+/*span*/.note,
 /*span*/.mini-note {
     display: block;
     font-size: 80%;
@@ -237,21 +234,21 @@ figure {
     }
 }
 
-.align-center {
+/***/.align-center {
   text-align: center;
 }
 
 /*a*/.button {
-  background-color: #efefe8;
+  background-color: $color-button-light-background;
   padding: 0.5em 1em;
-  border-radius: 0.5rem;
+  border-radius: $dimen-border-radius-medium;
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   
   &:hover {
-    color: #fffff8!important;
-    background-color: #33332c;
+    color: $color-background-light!important;
+    background-color: $color-button-light-background-hover;
     text-decoration: none;
   }
 }
@@ -262,27 +259,27 @@ hr.gradient {
   background-color: transparent;
 
   &.rtl {
-    background-image: linear-gradient(-45deg, #111, transparent);
-  	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), #111);
-  	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), #111);
-  	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), #111);
-  	background-image: -o-linear-gradient(left, rgba(0,0,0,0), #111);
+    background-image: linear-gradient(-45deg, $color-text-light, transparent);
+  	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), $color-text-light);
+  	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), $color-text-light);
+  	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), $color-text-light);
+  	background-image: -o-linear-gradient(left, rgba(0,0,0,0), $color-text-light);
   }
   
   &.ltr {
-      background-image: linear-gradient(45deg, #111, transparent);
-    	background-image: -webkit-linear-gradient(right, rgba(0,0,0,0), #111);
-    	background-image: -moz-linear-gradient(right, rgba(0,0,0,0), #111);
-    	background-image: -ms-linear-gradient(right, rgba(0,0,0,0), #111);
-    	background-image: -o-linear-gradient(right, rgba(0,0,0,0), #111);
+      background-image: linear-gradient(45deg, $color-text-light, transparent);
+    	background-image: -webkit-linear-gradient(right, rgba(0,0,0,0), $color-text-light);
+    	background-image: -moz-linear-gradient(right, rgba(0,0,0,0), $color-text-light);
+    	background-image: -ms-linear-gradient(right, rgba(0,0,0,0), $color-text-light);
+    	background-image: -o-linear-gradient(right, rgba(0,0,0,0), $color-text-light);
   }
   
   &.center {
-    background-image: linear-gradient(45deg, transparent, #111, transparent);
-  	background-image: -webkit-linear-gradient(right, rgba(0,0,0,0), #111, rgba(0,0,0,0));
-  	background-image: -moz-linear-gradient(right, rgba(0,0,0,0), #111, rgba(0,0,0,0));
-  	background-image: -ms-linear-gradient(right, rgba(0,0,0,0), #111, rgba(0,0,0,0));
-  	background-image: -o-linear-gradient(right, rgba(0,0,0,0), #111, rgba(0,0,0,0));
+    background-image: linear-gradient(45deg, transparent, $color-text-light, transparent);
+  	background-image: -webkit-linear-gradient(right, rgba(0,0,0,0), $color-text-light, rgba(0,0,0,0));
+  	background-image: -moz-linear-gradient(right, rgba(0,0,0,0), $color-text-light, rgba(0,0,0,0));
+  	background-image: -ms-linear-gradient(right, rgba(0,0,0,0), $color-text-light, rgba(0,0,0,0));
+  	background-image: -o-linear-gradient(right, rgba(0,0,0,0), $color-text-light, rgba(0,0,0,0));
   }
 }
 
@@ -297,7 +294,7 @@ hr.gradient {
     $MATH - KATEX
 /**************************************/
 .katex-display {
-  width: 55%;
+  max-width: $dimen-max-width;
 }
 
 /**************************************
@@ -310,34 +307,13 @@ hr.gradient {
         width: calc(100% - 20px);
     }
 
+    .katex-display,
     p,table,blockquote,pre,img,hr,.mini-note,ul li,ol li {
-        max-width: 100%;
-    }
-
-    .katex-display {
-        max-width: 100%;
+        max-width: $dimen-max-width-tablet;
     }
 
     .menu-icon {
         display: inline-block;
-    }
-
-    nav {
-
-        ul.site-nav {
-            display: none;
-
-            li {
-                display: block;
-                margin: 1rem 0;
-                width: 100%;
-
-                a,a:visited {
-                    display: block;
-                    width: 100%;
-                }
-            }
-        }
     }
 
     figure {
@@ -382,15 +358,15 @@ hr.gradient {
 /**************************************/
 @media (prefers-color-scheme: dark) {
     body{
-      background: #090906;
+      background: $color-background-dark;
       filter: invert(1);
     }
     
     .button {
-      background-color: #e6e6e9;
+      background-color: $color-button-dark-background;
       
       &:hover {
-        background-color: #333330;
+        background-color: $color-button-dark-background-hover;
         filter: invert(0);
       }
     }

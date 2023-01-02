@@ -7,15 +7,15 @@
   .post-tags, .dt-published {
     text-transform: uppercase;
     font-size: smaller;
-    font-family: Courier, monospace;
+    font-family: $font-monospace;
     display: inline-block;
   }
   
   .post-tags {
-    color: rgb(220, 40, 40);
+    color: $color-anchor-light-hover;
     
     a {
-      color: rgb(220, 40, 40);
+      color: $color-anchor-light-hover;
       text-decoration: none;
     }
     
@@ -71,7 +71,7 @@
   span {
     display: block;
     font-size: 0.6em;
-    color: #6f6f68;
+    color: $color-dim-text-light;
     font-style: normal;
     text-transform: uppercase;
   }
@@ -85,7 +85,7 @@
   }
   
   a:hover {
-    background-color: #efefe8;
+    background-color: $color-button-light-background;
     text-decoration: none;
   }
   
@@ -147,7 +147,7 @@
   
   .post-nav {
     a:hover {
-      background-color: #e6e6e9;
+      background-color: $color-button-dark-background;
     }
   }
 }

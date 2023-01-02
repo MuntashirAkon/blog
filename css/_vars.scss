@@ -1,0 +1,39 @@
+/**************************************
+    $COLORS
+/**************************************/
+$color-text-light: #111;
+$color-dim-text-light: #6f6f68;
+
+$color-background-light: #fffff8;
+$color-background-dark: #090906;
+$color-background-dark-alt: #f6f6f9;
+
+$color-anchor-light: $color-text-light;
+$color-anchor-light-hover: rgb(220, 40, 40);
+
+$color-button-light-background: #efefe8;
+$color-button-light-background-hover: #33332c;
+$color-button-dark-background: #e6e6e9;
+$color-button-dark-background-hover: #333330;
+
+$color-popup-light-background: #fff;
+$color-popup-light-border: #afafa8;
+
+$color-icon-light: #3f3f38;
+$color-icon-light-hover: $color-text-light;
+
+/**************************************
+    $FONT
+/**************************************/
+$font-sans: "et-book", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+$font-sans-serif: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+$font-monospace: Courier, monospace;
+
+/**************************************
+    $DIMENSIONS
+/**************************************/
+$dimen-border: 0.1rem;
+$dimen-border-radius-small: 0.3rem;
+$dimen-border-radius-medium: 0.5rem;
+$dimen-max-width: 55%;
+$dimen-max-width-tablet: 100%;

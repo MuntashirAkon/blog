@@ -3,9 +3,15 @@
   vertical-align: middle;
   padding: 0.5rem;
     
-  & svg {
+  svg {
     height: 1.5rem;
-    fill: #3f3f38;
+    fill: $color-icon-light;
+  }
+  
+  &:hover {
+    svg {
+      fill: $color-icon-light-hover;
+    }
   }
 }
 
@@ -22,9 +28,9 @@
   display: none;
   position: absolute;
   padding: 0.3rem;
-  background-color: #fff;
-  border: 0.1rem solid #afafa8;
-  border-radius: 0.3rem;
+  background-color: $color-popup-light-background;
+  border: 0.1rem solid $color-popup-light-border;
+  border-radius: $dimen-border-radius-small;
   z-index: 2;
   
   & > span {
@@ -36,7 +42,7 @@
     
     & > svg {
       height: 1rem;
-      fill: #3f3f38;
+      fill: $color-icon-light;
     }
   }
   
@@ -49,4 +55,13 @@
   & > span.linkedin:hover > svg {fill: #0077b5;}
   & > span.mail:hover > svg {fill: #7D7D7D;}
   & > span.instagram:hover > svg {fill: #C73B92;}
+}
+
+/**************************************
+    $MEDIA QUERIES - DARK
+/**************************************/
+@media (prefers-color-scheme: dark) {
+  #share-buttons > span:hover {
+    filter: invert(1);
+  }
 }
