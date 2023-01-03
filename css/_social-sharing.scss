@@ -33,7 +33,7 @@
   border-radius: $dimen-border-radius-small;
   z-index: 2;
   
-  & > span {
+  & > a {
     padding: 0.5rem;
     height: 1rem;
     width: 1rem;
@@ -44,24 +44,21 @@
       height: 1rem;
       fill: $color-icon-light;
     }
-  }
+    
   
-  & > span:hover {
-    cursor: pointer;
+    &.facebook:hover > svg {fill: #3B5998;}
+    &.twitter:hover > svg {fill: #55ACEE;}
+    &.linkedin:hover > svg {fill: #0077b5;}
+    &.mail:hover > svg {fill: #7D7D7D;}
+    &.instagram:hover > svg {fill: #C73B92;}
   }
-  
-  & > span.facebook:hover > svg {fill: #3B5998;}
-  & > span.twitter:hover > svg {fill: #55ACEE;}
-  & > span.linkedin:hover > svg {fill: #0077b5;}
-  & > span.mail:hover > svg {fill: #7D7D7D;}
-  & > span.instagram:hover > svg {fill: #C73B92;}
 }
 
 /**************************************
     $MEDIA QUERIES - DARK
 /**************************************/
 @media (prefers-color-scheme: dark) {
-  #share-buttons > span:hover {
+  #share-buttons > a:hover {
     filter: invert(1);
   }
 }

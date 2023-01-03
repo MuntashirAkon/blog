@@ -1,20 +1,31 @@
 {% assign safeurl = site.url | append: page.url | url_encode %}
-{% assign safetitle = page.title | url_encode %}
-{% assign safetitlepre = "[Blog] " | append: page.author | append: " - " | url_encode %}
+{% assign safetitle = page.title | uri_escape %}
+{% assign safetitlepre = "[Blog] " | append: page.author | append: " - " | uri_escape %}
+{% assign facebook_url = "https://www.facebook.com/share.php?u=" | append: safeurl  %}
+{% assign twitter_url = "https://twitter.com/intent/tweet?url=" | append: safeurl | append: "&text=" | append: safetitle | append: "&via=" | append: site.twitter_username %}
+{% assign linkedin_url = "https://www.linkedin.com/sharing/share-offsite/?url=" | append: safeurl %}
+{% assign mail_url = "mailto:?&body=" | append: safeurl | append: "&subject=" | append: safetitlepre | append: page.title %}
+{% capture facebook_icon %}
+  {%- include icons/facebook.svg -%}
+{% endcapture %}
+{% capture twitter_icon %}
+  {%- include icons/twitter.svg -%}
+{% endcapture %}
+{% capture linkedin_icon %}
+  {%- include icons/linkedin.svg -%}
+{% endcapture %}
+{% capture mail_icon %}
+  {%- include icons/mail.svg -%}
+{% endcapture %}
 
-<label class="share-icon" for="share-button">{% include icons/share.svg %}</label>
+<label class="share-icon" for="share-button" role="button" aria-pressed="false"
+  aria-haspopup="true" aria-label="Share" tabindex="0">
+  {%- include icons/share.svg -%}
+</label>
 <input class="share-button" type="checkbox" id="share-button" />
 <span id="share-buttons">
-  <span class="facebook" title="Share this on Facebook"    onclick="window.open('https://www.facebook.com/share.php?u={{ safeurl }}','popup','width=600,height=600'); return false;">
-    {% include icons/facebook.svg %}
-  </span>
-  <span class="twitter"  title="Share this on Twitter"     onclick="window.open('https://twitter.com/intent/tweet?url={{ safeurl }}&text={{ safetitle }}&via={{ site.twitter_username }}','popup','width=600,height=600'); return false;">
-    {% include icons/twitter.svg %}
- </span>
-  <span class="linkedin" title="Share this on Linkedin"    onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url={{ safeurl }}','popup','width=600,height=600'); return false;">
-    {% include icons/linkedin.svg %}
-  </span>
-  <span class="mail"     title="Share this through Email"  onclick="window.open('mailto:?&body={{ safeurl }}&subject={{ safetitlepre }}{{ safetitle }}','popup','width=600,height=600'); return false;">
-    {% include icons/mail.svg %}
-  </span>
+  {%- include link.html class="facebook" title="Share this on Facebook" newtab=true type="external" href=facebook_url content=facebook_icon -%}
+  {%- include link.html class="twitter" title="Share this on Twitter" newtab=true type="external" href=twitter_url content=twitter_icon -%}
+  {%- include link.html class="linkedin" title="Share this on Linkedin" newtab=true type="external" href=linkedin_url content=linkedin_icon -%}
+  {%- include link.html class="mail" title="Share this through Email" href=mail_url content=mail_icon -%}
 </span>

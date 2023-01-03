@@ -1,0 +1,21 @@
+{%- comment -%}
+Params:
+  - href (default: omitted)
+  - class (default: omitted)
+  - type (internal/external, default: internal/omitted)
+  - newtab (true/false, default: false/omitted)
+  - title (default: omitted)
+  - content (default: "")
+{%- endcomment -%}
+
+<a
+  {% if include.class %}class="{{ include.class }}"{% endif %}
+  {% if include.href %}href="{{ include.href }}"{% endif %}
+  {% if include.title %}title="{{ include.title }}"{% endif %}
+  {% if include.type == "external" %}
+    rel="external noreferrer nofollow noopener" referrerpolicy="no-referrer"
+  {% endif %}
+  {% if include.newtab %}target="_blank"{% endif %}
+>
+{%- if include.content -%}{{ include.content }}{%- endif -%}
+</a>
