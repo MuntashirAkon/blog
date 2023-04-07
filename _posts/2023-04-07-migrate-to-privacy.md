@@ -184,7 +184,7 @@ security features such as fingerprint or face ID, and use pin or password.
 
 Thirdly, replace the closed source apps with good and trackerless open source
 alternatives. While this may not improve your security, it will improve your
-privacy. Here's a [list of apps that I frequently use]({% post_url 2022-12-30-android-apps-that-i-frequently-use %}) 
+privacy. Here's a [list of apps that I frequently use]({{ "" | relative_url }}{% link _posts/2022-12-30-android-apps-that-i-frequently-use.md %}) 
 which may help you getting started. 
 
 ## Be Clever, Consume Less
@@ -218,7 +218,7 @@ both cases, if there's an account involved, you might want to keep it in your
 password manager to check whether you're account is still present a few years
 later. But even if they made the data private, it should be enough to keep the
 search engines from indexing your data which should be your primary concern.
-Because OSINT (open source intelligent) experts and data brokers primarily use
+Because OSINT (open source intelligence) experts and data brokers primarily use
 various search engines with special keywords (e.g. Google dorks) to collect
 data about you.
 
@@ -229,7 +229,7 @@ privacy is not immediately clear to people, even to those who are new to all
 this. If you're the latter, at first ask yourself why you're here. This should
 get you started. Another important thing is keeping yourself informed about
 what is happening around you. Accept it or not, you're now a member of an
-extended economic society which some poeple calls “Global Village”. The
+extended economic society which some poeple call “Global Village”. The
 Internet is not created for you to watch some movies or play games, it was
 created for speeding up the communication which are vital for economy and
 defence. So, as member of the society, it's your responsibility to keep
