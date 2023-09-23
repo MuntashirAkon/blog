@@ -15,14 +15,14 @@ Many of you often wonder what applications I use in a daily basis. As you might 
 - Audio Recorder ([GitHub](https://github.com/Dimowner/AudioRecorder) \| [F-Droid](https://f-droid.org/en/packages/com.dimowner.audiorecorder/)) - _Miniature yet beautiful audio recorder you’ll ever see_
 - Aurora Store ([GitLab](https://gitlab.com/AuroraOSS/AuroraStore) \| [F-Droid](https://f-droid.org/en/packages/com.aurora.store/)) - _Aurora Store is an alternative to Google's Play Store_
 - Automation ([Server47](https://git.server47.de/jens/Automation) \| [F-Droid](https://f-droid.org/en/packages/com.jens.automation2/)) - _Automate stuff on your device by creating rules, a simple alternative to Tasker_
+- Barcode Scanner ([GitLab](https://gitlab.com/Atharok/BarcodeScanner) \| [F-Droid](https://f-droid.org/en/packages/com.atharok.barcodescanner/)) - _Read and generate QR & barcodes, and find additional information using various online API such as Open Food Facts or Open Library._
 - Battery Charge Limiter ([GitHub](https://github.com/MuntashirAkon/BatteryChargeLimiter)) - _Control when to start and stop charging your battery, requires root_
-- Binary Eye ([GitHub](https://github.com/markusfisch/BinaryEye) \| [F-Droid](https://f-droid.org/en/packages/de.markusfisch.android.binaryeye/)) - _A simple barcode scanner that uses the ZXing ("Zebra Crossing") library_
 - Bitwarden ([GitHub](https://github.com/bitwarden/mobile) \| [Bitwarden F-Droid](https://mobileapp.bitwarden.com/fdroid/)) - _Bitwarden is a password manager that works both online and offline, self-hostable, requires an account_
-- Bromite ([GitHub](https://github.com/bromite/bromite) \| [Bromite F-Droid](https://www.bromite.org/fdroid)) - _A fork of Chromium web browser with support for ad blocking and enhanced privacy_
 - Calculator++ ([GitHub](https://github.com/Bubu/android-calculatorpp) \| [F-Droid](https://f-droid.org/en/packages/org.solovyev.android.calculator/)) - _(Abandoned but works) Scientific calculator with sleek interface and powerful capabilities_
 - Camera ([GitHub](https://github.com/GrapheneOS/Camera)) - _Modern camera app focused on privacy and security with QR & barcode scanning, by GrapheneOS_
+- Cromite ([GitHub](https://github.com/uazo/cromite) \| [Cromite F-Droid](https://www.cromite.org/fdroid/repo/)) - _A fork of Chromium web browser with support for ad blocking and enhanced privacy, fork of unmaintained [Bromite](https://github.com/bromite/bromite)_
 - DAVx⁵ ([GitHub](https://github.com/bitfireAT/davx5-ose/) \| [F-Droid](https://f-droid.org/en/packages/at.bitfire.davdroid/)) - _CalDAV/CardDAV Synchronization and Client_
-- Droid-ify ([GitHub](https://github.com/Iamlooker/Droid-ify) \| [F-Droid](https://f-droid.org/en/packages/com.looker.droidify/)) - _A quick material F-Droid client (has similar drawbacks like the rest of the clients, but at least, it supports setting App Manager as the installer unlike, say, [NeoStore](https://f-droid.org/en/packages/com.machiav3lli.fdroid/))_
+- Droid-ify ([GitHub](https://github.com/Iamlooker/Droid-ify) \| [F-Droid](https://f-droid.org/en/packages/com.looker.droidify/)) - _A quick, simple and intuitive material-designed F-Droid client (some people prefer [NeoStore](https://f-droid.org/en/packages/com.machiav3lli.fdroid/))_
 - F-Droid Build Status ([Codeberg](https://codeberg.org/pstorch/F-Droid_Build_Status) \| [F-Droid](https://f-droid.org/en/packages/de.storchp.fdroidbuildstatus/)) - _Displays and monitors build status from F-Droid_
 - Feeder ([GitLab](https://gitlab.com/spacecowboy/Feeder) \| [F-Droid](https://f-droid.org/en/packages/com.nononsenseapps.feeder/)) - _An awesome Libre and Open Source RSS feed reader_
 - Forkgram ([GitHub](https://github.com/Forkgram/TelegramAndroid) \| [F-Droid](https://f-droid.org/en/packages/org.forkgram.messenger/)) - _A fork of the official Telegram for Android application with extended features_
@@ -49,3 +49,4 @@ I use Lineage OS 18.1. Hence, for calendar, contacts, keyboard, launcher and pho
 
 **Edit History**
 - On July 1, 2023, *Aard 2* and *Feeder* apps were added replacing *Read You*.
+- On September 23, 2023, *Cromite* and *Barcode Scanner* apps were added replacing *Bromite* and *Binary Eye* respectively.
