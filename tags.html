@@ -12,7 +12,7 @@ title: Tags
 <p class="align-center-tablet monospace">
 {% for tag in tags_list %}
   <span>
-    #<a href="{{ "tags/" | relative_url }}{{ tag | downcase }}">{{ tag | upcase }}</a>({{ site.tags[tag].size }}){% unless forloop.last %},{% endunless %}
+    #<a href="{{ "tags/" | relative_url }}{{ tag | slugify }}">{{ tag | upcase }}</a>({{ site.tags[tag].size }}){% unless forloop.last %},{% endunless %}
   </span>
 {% endfor %}
 </p>
