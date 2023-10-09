@@ -6,27 +6,24 @@ title: About Me
 {% assign twitter_url = "https://twitter.com/" | append: site.twitter_username %}
 
 <p>
-  My name is Muntashir Al-Islam (also known as Muntashir Akon<span class="sidenote-number"></span>).
-  I have a B.S in Computer Science & Engineering.
-  I am an open source contributor and activist.
-  My activism particularly focuses on {% include link.html href="https://reproducible-builds.org/" type="external" newtab=true content="reproducible builds" %} and privacy.
-  My current job is really a side-job where I work remotely from home.
-  I am available for hiring<span class="sidenote-number"></span> until I manage a better job.
-  [Unlike some people, I shall not disclose my hobbies because you'll think I'm joking.]
-  <span class="sidenote"><em>Akon</em> is my surname.</span>
+  {% include link.html href="https://sites.google.com/view/muntashir" type="external" content="View academic profile" %}
 </p>
-
 <p>
-  <span class="sidenote">
-    Unfortunately, I cannot share my résumé for privacy reasons. You can always contact me.
-  </span>
+  My name is Muntashir Al-Islam (also known as Muntashir Akon<span class="sidenote-number"></span>).
+  I have a B.Sc. in Computer Science & Engineering. I am an open source
+  contributor and activist. My activism particularly focuses on
+  {% include link.html href="https://reproducible-builds.org/" type="external" newtab=true content="reproducible builds" %}
+  and privacy. You can also {% include link.html href="https://drive.google.com/file/d/104SHOVeQA--x15izlkU3LCOiUSoc9VQc/view" type="external" newtab=true content="view or download" %}
+  my CV.
+  <span class="sidenote"><em>Akon</em> is my surname.</span>
 </p>
 
 <p>
   E-Mail: <a href="mailto:{{ site.email }}" itemprop="email">{{ site.email }}</a><br>
   GitHub: {% include link.html href=github_url type="external" content=site.github_username %}<br>
   Stack Overflow: {% include link.html href="https://stackoverflow.com/users/4147849" type="external" content="Muntashir Akon" %}<br>
-  Twitter: @{% include link.html href=twitter_url type="external" content=site.twitter_username %}<br>
+  Social: {% include link.html href=twitter_url type="external" newtab=true content="Twitter/X" %} 
+     - {% include link.html href="https://www.linkedin.com/in/muntashir-al-islam" type="external" newtab=true content="LinkedIn" %}<br>
   Donate: {% include link.html href="https://opencollective.com/muntashir" type="external" newtab=true content="Open Collective" %}
      - {% include link.html href="https://patreon.com/muntashir" type="external" newtab=true content="Patreon" %}
 </p>
