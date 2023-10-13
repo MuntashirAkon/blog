@@ -107,12 +107,12 @@ app or operating system by setting up NextCloud as your CardDAV and CalDAV
 provider just like E-Mails. In Android, you can achieve both using
 [DAVx⁵](https://github.com/bitfireAT/davx5-ose/).
 
-However, one of the biggest cloud service appears to be something people don't
+However, one of the biggest cloud services appears to be something people don't
 even know of: Web Browsers. Both Google Chrome and Microsoft Edge use your
 respective account for synchronisation which means that it knows all your
 browsing history and timeline, and, thereby, knowing everything you do in the
 Internet. The easiest way to migrate is to use a privacy friendly browser.
-For Android, [Bromite](https://www.bromite.org/) is considered the best
+For Android, [Cromite](https://www.cromite.org/) is considered the best
 alternative to Google Chrome. But for iOS, the only alternative at present is
 [Brave Browser](https://brave.com/). If you've used Firefox, you can continue
 using it, but be aware that Firefox, by default, is not a privacy-friendly
@@ -124,7 +124,7 @@ to enable them manually. In addition, you need to install a few browser
 extensions to prevent big brothers from tracking you across the web. I would
 recommend the following browser extensions:
 
-1. uBlock Origin - For blocking tracking and ads
+1. uBlock Origin - For blocking trackers and ads
 2. LibRedirect - Redirect popular websites to their privacy-friendly
    alternatives
 3. Floccus - Synchronise bookmarks in the cloud such as NextCloud
@@ -133,10 +133,13 @@ recommend the following browser extensions:
    Network (CDN) to prevent tracking.
 
 If you are an advanced user, you can also install the following extensions:
+
 6. uMatrix - Similar to uBlock Origin but it gives tighter control
-7. ScriptSafe - Similar to uBlock Origina and uMatrix but with a different
+7. JShelter - Prevents browser fingerprinting by controlling certain JavaScript
+   features
+8. ScriptSafe - Similar to uBlock Origin and uMatrix but with a different
    philosophy
-8. Vytal - Control trivial features that are used to generate unique
+9. Vytal - Control trivial features that are used to generate unique
    fingerprint from your browser such as timezone.
    
 However, a few days ago, the best VPN provider, Mullvad VPN along with the team
@@ -161,7 +164,7 @@ something you can do using your memory alone, you need a password manager.
 Depending on what you need, you can choose [BitWarden](https://bitwarden.com/)
 or [KeePassXC](https://keepassxc.org/)/[KeePassDX](https://www.keepassdx.com/)
 as your password manager. Since you're only getting started, I would suggest
-BitWarden since it provides a better flexibility than the others. For
+BitWarden since it provides more flexibilities than the others. For
 authenticator, never use outdated, insecure and closed-source providers such as
 Google Authenticator or Authy. Instead use well-known open source alternatives
 such as [Aegis Authenticator](https://github.com/beemdevelopment/Aegis).
@@ -176,16 +179,17 @@ is enough for you. If the phone does not receive regular updates or is not
 from a reputed company, it may not be a sutiable phone, and if you afford it,
 you should upgrade your phone so that you can use a secure operating system
 such as [Graphene OS](https://grapheneos.org/). Otherwise, you should uninstall
-all the unnecessary system applications from your phone.
+all the unnecessary system applications from your phone and pay attention to
+what you install even if you trust the source of the application.
 
 Secondly, make sure that the device is encrypted. When it's possible, the
 encryption password should be as long as possible. Avoid using insecure
 security features such as fingerprint or face ID, and use pin or password.
 
-Thirdly, replace the closed source apps with good and trackerless open source
+Thirdly, replace the closed source apps with good and tracker-free open source
 alternatives. While this may not improve your security, it will improve your
 privacy. Here's a [list of apps that I frequently use]({{ "" | relative_url }}{% link _posts/2022-12-30-android-apps-that-i-frequently-use.md %}) 
-which may help you getting started. 
+which may help you getting started.
 
 ## Be Clever, Consume Less
 Less consumption is freqently associated with economic and health benefits. But
@@ -202,9 +206,15 @@ us a more permanent happiness. I am not a psychiatrist, but I found that
 reflecting on your deeds and beliefs, that is, self-judgement, is a powerful
 tool to gain long term happiness as you start to understand yourself better
 this way and what you really need, as opposed to the ones imposed on you
-through the “induction” process above.
+through the above mentioned “induction” process.
 
 ## Obliviate Yourself from the Internet
+
+<figure>
+  <img loading="lazy" src="{{ 'images/hermione_granger_obliviate.webp' | absolute_url }}" alt="Hermione Granger obliviating herself from the people she loved" style="width: 245px" />
+  <span class="marginnote"><a href="https://en.wikipedia.org/wiki/Hermione_Granger" rel="noreferrer">Hermione Granger</a> obliviating herself from the people she loved</span>
+</figure>
+
 This could the most tedious task depending on how interactive you were. If you
 were like me and used a lot of sites carelessly, you will need to do a lot of
 things to wipe youself from the Internet. When I first started to wipe my
@@ -220,18 +230,19 @@ later. But even if they made the data private, it should be enough to keep the
 search engines from indexing your data which should be your primary concern.
 Because OSINT (open source intelligence) experts and data brokers primarily use
 various search engines with special keywords (e.g. Google dorks) to collect
-data about you.
+data about you. During this process, you should keep a low profile to allow
+search engines to gradually forget you.
 
 ## Keep Informed and Inform the Family and Friends
 The only way to effectively achieve total privacy is by spreading privacy
 awareness among the people you care about. This is because the importance of
 privacy is not immediately clear to people, even to those who are new to all
-this. If you're the latter, at first ask yourself why you're here. This should
+these. If you're the latter, at first ask yourself why you're here. This should
 get you started. Another important thing is keeping yourself informed about
 what is happening around you. Accept it or not, you're now a member of an
 extended economic society which some poeple call “Global Village”. The
 Internet is not created for you to watch some movies or play games, it was
 created for speeding up the communication which are vital for economy and
-defence. So, as member of the society, it's your responsibility to keep
+defence. So, as member of this society, it's your responsibility to keep
 yourself well-informed about events and issues that may affect you or the
 people you care about.
