@@ -1,0 +1,4 @@
+---
+slug: Story
+title: Story
+---
