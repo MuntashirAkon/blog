@@ -1,0 +1,12 @@
+---
+layout: post
+title: "August'24 Updates"
+description: "Major political changes in Bangladesh with the ousting of the government, nationwide turmoil, and severe flooding; personal reflections on family loss and starting a Ph.D.; work continues on major v4.0.0 beta release amid distractions; Magisk privilege escalation vulnerability patched with no urgent concern; rising security issues prompt Samsung users to debloat stock ROM due to ongoing system app vulnerabilities."
+date: 2024-09-01T22:39:00-07:00
+tags: app_manager
+---
+
+1. The month August has been quite eventful. The tyrannical govt of Bangladesh was ousted on 5 August as people joined the students in their one-point demand. The prime minister fled the country, police fled from their stations, students and army were in charge of law and order, and an interim govt was formed. Then, we saw many unsuccessful attempts by various parties to oust the new govt. Also, there was a sudden and massive flood in the Southeastern part of the country. Finally, when all things were settling down, I lost my grandmother in 22 August as she had multiple strokes due to old age. It was also my last month in my job as I am starting Ph.D. from September. I also needed to prepare for my journey to a new country, which will also be my first ever visit to any country as well as plane journey.
+2. I am trying my best to update documentation so that I can release the next beta as soon as possible. v4.0.0 introduces a lot of changes. So, it’s taking some time, not to mention the distractions that I’m constantly facing.
+3. Many people are talking about the latest Magisk privilege escalation vulnerability which allows a third-party application to obtain root without any prompt. The vulnerability is discovered by the Magisk contributors themselves and cannot be exploited easily. So, there’s no need to panic. You can also switch to the Canary channel to have a fix, but it’s not urgent.
+4. On another news, Samsung users should really focus on debloating their stock ROM as we’re seeing a surge of vulnerabilities in their system and preinstalled applications. One of the primary reasons for privilege escalation vulnerabilities is the lack of audit of the system applications. UID < 10000 are special UIDs that need special care, especially UID 1000. Unfortunately, we can expect nothing from them as it seems that the security audits are skipped even for their kernel modules. My question is: if you cannot audit your system applications, why do you develop them in first place? Why not rely on the AOSP instead.
